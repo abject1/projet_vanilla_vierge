@@ -23,7 +23,8 @@
 body {
   font-size: 1.6rem;
   color: var(--text);
-  font-family: var(--font-family); }
+  font-family: var(--font-family);
+  background-color: white; }
 
 h1,
 h2,

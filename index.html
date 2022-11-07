@@ -20,6 +20,30 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Mise en place du projet</h1>
+    <ul>
+        <li><h4>Dans le Termianl : npm i -y</h4></li>
+        <li><h4>Dans le Terminal : npm i @babel/cli @babel/core @babel/preset-env babel-loader node-sass sass sass-loader</h4></li>
+        <li><h4>Crée un fichier "babel.config.js"</h4></li>
+        <li><h4>Crée un dossier src</h4></li>
+        <li><h4>Dans le dossier src crée un dossier js et un dossier sass</h4></li>
+        <li><h4>crée les fichier main.scss / index.scss / _variables.scss / _utils.scss / _reset.scss / _media-queries.scss / _classes.scss / _base.scss dans le dossier sass</h4></li>
+        <li><h4>Crée les fichier main.js et index.js dans le dossier js</h4></li>
+    </ul>
+    <div class="compoFichier">
+        <h2>Composition des différents fichiers</h2>
+        <div class="package">
+            <h3>Package.json</h3>
+            <h5>Inséret ces script</h5>
+            <p>
+                "sass": "node-sass -w src/scss -o dist/css",<br>
+                "babel": "babel src/js --out-dir dist/js"
+            </p>
+        </div>
+        <div class="babel">
+            <h3>babel.config.js</h3>
+            <img src="./assets/babel.config.js" alt="bebel.config.js">
+        </div>
+    </div>
 </body>
 </html>

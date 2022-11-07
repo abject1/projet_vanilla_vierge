@@ -1,0 +1,58 @@
+@import './variables';
+@import './media-queries';
+
+body {
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        margin: 1rem 0;
+    }
+    ul {
+        border: 0.1rem solid var(--divider);
+        margin: 4rem;
+        li {
+            text-align: center;
+            border-bottom: 0.3rem solid var(--accent);
+            margin: 3rem;
+            h4 {
+                margin: 1rem 0;
+            }
+        }
+    }
+    .compoFichier {
+        border: 0.1rem solid var(--divider);
+        margin: 4rem;
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        .package {
+            border: 0.1rem solid var(--accent);
+            margin: 2rem;
+            padding: 1rem;
+            h3 {
+                text-align: center;
+                text-decoration: underline;
+            }
+            h5 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        .babel {
+            border: 0.1rem solid var(--accent);
+            margin: 2rem;
+            padding: 1rem;
+            h3 {
+                text-align: center;
+            }
+            img {
+                display: block;
+                margin: auto;
+                width: 20%;
+            }
+        }
+    }
+}
