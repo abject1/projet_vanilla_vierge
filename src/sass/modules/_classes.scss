@@ -1,0 +1,68 @@
+.btn {
+    display: block;
+    margin: 0.8rem auto;
+    padding: 0.6rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+    &-primary {
+        border: 2px solid #440111;
+        background-color: black;
+        color: white;
+    }
+    &-secondary {
+        border: 2px solid #440111;
+        background-color: rgb(219, 217, 217);
+        color: black;
+    }
+}
+
+.input-style {
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+    display: block;
+    margin: 2.5rem auto;
+}
+
+.page-title{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--accent);
+    span {
+        color: rgba(197, 40, 40, 0.753);
+    }
+}
+
+.not-seen {
+    display: none;
+}
+
+.separator {
+    display: block;
+    margin: 1.2rem auto 0.6rem auto;
+    min-height: 0.2rem;
+    max-width: 50vw;
+    opacity: 0.8;
+    &-primary {
+        background-color: black;
+    }
+    &-secondary {
+        background-color: white;
+    }
+}
+
+.color-red {
+    color: var(--secondary);
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.soon {
+    text-decoration: line-through;
+}

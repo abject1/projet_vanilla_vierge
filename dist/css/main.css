@@ -1,12 +1,63 @@
+@charset "UTF-8";
 :root {
-  --primary: #2ecc71;
-  --dark: #27ae60;
-  --accent: #2c3e50;
-  --text: #333;
-  --divider: #ecf0f1;
-  --font-family: ;
+  --primary: #060102 !important;
+  --secondary: #640118 !important;
+  --accent: #0D0103 !important;
+  --euphorie: #BD6D00 !important;
+  --text: #ffffff !important;
+  --grey: #aba9a9 !important;
+  --grey-50: #c5c0c0 !important;
+  --grey-100: #dfdada !important;
   --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-        0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+        0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  --roboto-900: 'Roboto-900', sans-serif
+    --roboto-900-italic : 'Roboto-900-italic', sans-serif
+    --roboto-700 : 'Roboto-700', sans-serif
+    --roboto-700-italic : 'Roboto-700-italic', sans-serif
+    --roboto-500 : 'Roboto-500', sans-serif
+    --roboto-500-italic : 'Roboto-500-italic', sans-serif
+    --roboto-400 : 'Roboto-400', sans-serif
+    --roboto-400-italic : 'Roboto-400-italic', sans-serif
+    --roboto-300 : 'Roboto-300', sans-serif
+    --roboto-300-italic : 'Roboto-400-italic', sans-serif
+    --roboto-100 : 'Roboto-100', sans-serif
+    --roboto-100-italic : 'Roboto-100-italic', sans-serif
+
+    // Arsenal 
+
+    --arsenal-700 : 'Arsenal-700', sans-serif
+    --arsenal-700-italic : 'Arsenal-700-italic', sans-serif
+    --arsenal-regular : 'Arsenal-regular', sans-serif
+    --arsenal-italic : 'Arsenal-italic', sans-serif
+
+    // Bree_Serif
+
+    --bree : 'Bree', sans-serif
+
+    // Fjalla
+
+    --fjalla : "FjallaOne", sans-serif
+
+    // Indie
+
+    --indie : "IndieFlower", sans-serif
+
+    // Lilita
+
+    --lilita : "LilitaOne", sans-serif
+
+    // Monoton
+
+    --monoton : "Monoton", sans-serif
+
+    // Orbitron
+
+    --orbitron : "Orbitron", sans-serif
+
+    // Russo
+
+    --russo  : "Russo", sans-serif
+; }
 
 * {
   margin: 0;
@@ -14,17 +65,18 @@
   box-sizing: border-box; }
 
 /* Landscape phones and down */
-/* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
-/* Large desktop */
+/*  desktop */
+/*  Large desktop */
+/* Extra Large desktop */
 :root {
   font-size: 62.5%; }
 
 body {
   font-size: 1.6rem;
   color: var(--text);
-  font-family: var(--font-family);
-  background-color: white; }
+  background-color: rgba(148, 148, 148, 0.75);
+  height: 100%; }
 
 h1,
 h2,
@@ -32,25 +84,35 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 2rem; }
+  text-transform: uppercase; }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: --fjalla;
+  text-align: center;
+  padding: 0.2rem; }
 
 h1 {
-  font-size: 4.2rem; }
+  font-size: 3.4rem;
+  font-family: --monoton; }
 
 h2 {
-  font-size: 3.8rem; }
-
-h3 {
-  font-size: 3.4rem; }
-
-h4 {
   font-size: 3rem; }
 
+h3 {
+  font-size: 2.2rem; }
+
+h4 {
+  font-size: 1.6rem; }
+
 h5 {
-  font-size: 2.6rem; }
+  font-size: 1.2rem; }
 
 h6 {
-  font-size: 2.2rem; }
+  font-size: 0.8rem; }
 
 ul {
   list-style: none; }
@@ -58,6 +120,208 @@ ul {
 img {
   max-width: 100%; }
 
-a {
+a, li {
   color: var(--text);
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: --roboto-400-italic; }
+
+::placeholder {
+  font-family: --orbitron;
+  color: white; }
+
+input {
+  border: 2px solid var(--secondary);
+  border-radius: 5%;
+  background-color: var(--grey-50);
+  margin: 3rem;
+  padding: 1rem 1.5rem; }
+
+.btn {
+  display: block;
+  margin: 0.8rem auto;
+  padding: 0.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px; }
+  .btn-primary {
+    border: 2px solid #440111;
+    background-color: black;
+    color: white; }
+  .btn-secondary {
+    border: 2px solid #440111;
+    background-color: #dbd9d9;
+    color: black; }
+
+.input-style {
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid var(--secondary);
+  border-radius: 5px;
+  display: block;
+  margin: 2.5rem auto; }
+
+.page-title {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: var(--accent); }
+  .page-title span {
+    color: rgba(197, 40, 40, 0.753); }
+
+.not-seen {
+  display: none; }
+
+.separator {
+  display: block;
+  margin: 1.2rem auto 0.6rem auto;
+  min-height: 0.2rem;
+  max-width: 50vw;
+  opacity: 0.8; }
+  .separator-primary {
+    background-color: black; }
+  .separator-secondary {
+    background-color: white; }
+
+.color-red {
+  color: var(--secondary); }
+
+.text-underline {
+  text-decoration: underline; }
+
+.soon {
+  text-decoration: line-through; }
+
+@font-face {
+  font-family: 'Roboto-900';
+  src: url(‘/fonts/Roboto/Roboto-black.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-900-italic';
+  src: url(‘/fonts/Roboto/Roboto-BlackItalic.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-700';
+  src: url(‘/fonts/Roboto/Roboto-Bold.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-700-italic';
+  src: url(‘/fonts/Roboto/Roboto-BoldItalic.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-500';
+  src: url(‘/fonts/Roboto/Roboto-Medium.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-500-italic';
+  src: url(‘/fonts/Roboto/Roboto-MediumItalic.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-400';
+  src: url(‘/fonts/Roboto/Roboto-Regular.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-400-italic';
+  src: url(‘/fonts/Roboto/Roboto-Italic.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-300';
+  src: url(‘/fonts/Roboto/Roboto-Light.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-300-italic';
+  src: url(‘/fonts/Roboto/Roboto-LightItalic.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-100';
+  src: url(‘/fonts/Roboto/Roboto-Thin.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Roboto-100-italic';
+  src: url(‘/fonts/Roboto/Roboto-ThinItalic.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Arsenal-700';
+  src: url(‘/fonts/Arsenal/Arsenal-Bold.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Arsenal-700-italic';
+  src: url(‘/fonts/Arsenal/Arsenal-BoldItalic.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Arsenal-400';
+  src: url(‘/fonts/Arsenal/Arsenal-Regular.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Arsenal-400-italic';
+  src: url(‘/fonts/Arsenal/Arsenal-Italic.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Bree';
+  src: url(‘/fonts/Bree_Serif/BreeSerif-Regular.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'FjallaOne';
+  src: url(‘/fonts/Fjalla_One/FjallaOne-Regular.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'IndieFlower';
+  src: url(‘/fonts/Indie_Flower/IndieFlower-Regular.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'LilitaOne';
+  src: url(‘/fonts/Lilita_One/LilitaOne-Regular.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Monoton';
+  src: url(‘/fonts/Monoton/Monoton-Regular.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url(‘/fonts/Orbitron/Orbitron-VariableFont_wght.ttf’) format(‘truetype’); }
+
+@font-face {
+  font-family: 'Russo';
+  src: url(‘/fonts/Russo_One/RussoOne-Regular.ttf’) format(‘truetype’); }
+
+body h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1rem 0; }
+
+body ul {
+  border: 0.1rem solid var(--divider);
+  margin: 4rem; }
+  body ul li {
+    text-align: center;
+    border-bottom: 0.3rem solid var(--accent);
+    margin: 3rem; }
+    body ul li h4 {
+      margin: 1rem 0; }
+
+body .compoFichier {
+  border: 0.1rem solid var(--divider);
+  margin: 4rem; }
+  body .compoFichier h2 {
+    text-align: center;
+    text-decoration: underline; }
+  body .compoFichier .package {
+    border: 0.1rem solid var(--accent);
+    margin: 2rem;
+    padding: 1rem; }
+    body .compoFichier .package h3 {
+      text-align: center;
+      text-decoration: underline; }
+    body .compoFichier .package h5 {
+      text-align: center; }
+    body .compoFichier .package p {
+      text-align: center; }
+  body .compoFichier .babel {
+    border: 0.1rem solid var(--accent);
+    margin: 2rem;
+    padding: 1rem; }
+    body .compoFichier .babel h3 {
+      text-align: center; }
+    body .compoFichier .babel img {
+      display: block;
+      margin: auto;
+      width: 20%; }
